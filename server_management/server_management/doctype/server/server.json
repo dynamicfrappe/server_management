@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-02-04 17:03:13.449148",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "data_1",
+  "server_manage_type",
+  "column_break_3",
+  "server_type",
+  "section_break_5",
+  "server_url",
+  "customer_name",
+  "server_port",
+  "column_break_9",
+  "customer_email",
+  "domain_name",
+  "section_break_12",
+  "subscription_start_date",
+  "subscription_end_date",
+  "column_break_15",
+  "customer_support_start_date",
+  "customer_support_end_date",
+  "section_break_18",
+  "consultant_name",
+  "consultant_email",
+  "column_break_21",
+  "sales_man_name",
+  "sales_man_email",
+  "section_break_24",
+  "server_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "data_1",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "ERP\nHR",
+   "translatable": 1
+  },
+  {
+   "fieldname": "server_manage_type",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Server Manage Type",
+   "options": "by us\nby user",
+   "translatable": 1
+  },
+  {
+   "fieldname": "server_type",
+   "fieldtype": "Select",
+   "label": "Server Type",
+   "options": "Local\nCloud\nFrappe Cloud"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "server_url",
+   "fieldtype": "Data",
+   "label": "Server URL "
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "server_port",
+   "fieldtype": "Data",
+   "label": "Server Port"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Customer Email"
+  },
+  {
+   "fieldname": "domain_name",
+   "fieldtype": "Data",
+   "label": "Domain Name"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "subscription_start_date",
+   "fieldtype": "Date",
+   "label": "Subscription Start Date"
+  },
+  {
+   "fieldname": "subscription_end_date",
+   "fieldtype": "Date",
+   "label": "Subscription End Date"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_support_start_date",
+   "fieldtype": "Date",
+   "label": "Customer Support Start Date"
+  },
+  {
+   "fieldname": "customer_support_end_date",
+   "fieldtype": "Date",
+   "label": "Customer Support End Date"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "consultant_name",
+   "fieldtype": "Data",
+   "label": "Consultant Name "
+  },
+  {
+   "fieldname": "consultant_email",
+   "fieldtype": "Data",
+   "label": "Consultant Email"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_man_name",
+   "fieldtype": "Data",
+   "label": "Sales Man Name"
+  },
+  {
+   "fieldname": "sales_man_email",
+   "fieldtype": "Data",
+   "label": " Sales Man Email"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "server_status",
+   "fieldtype": "Select",
+   "label": "Server Status",
+   "options": "Active\nDeactivate"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Naming Series",
+   "options": "SER-.YYYY.-",
+   "translatable": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-04 17:15:21.140451",
+ "modified_by": "Administrator",
+ "module": "Server Management",
+ "name": "Server",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
