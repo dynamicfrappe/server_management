@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "naming_series:",
+ "autoname": "format:{server_url}-{customer_name}",
  "creation": "2024-02-04 17:03:13.449148",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -26,6 +26,7 @@
   "customer_support_start_date",
   "customer_support_end_date",
   "section_break_18",
+  "customer",
   "consultant_name",
   "consultant_email",
   "column_break_21",
@@ -54,6 +55,7 @@
   {
    "fieldname": "server_type",
    "fieldtype": "Select",
+   "in_standard_filter": 1,
    "label": "Server Type",
    "options": "Local\nCloud\nFrappe Cloud"
   },
@@ -68,12 +70,19 @@
   {
    "fieldname": "server_url",
    "fieldtype": "Data",
-   "label": "Server URL "
+   "label": "Server URL ",
+   "reqd": 1
   },
   {
    "fieldname": "customer_name",
-   "fieldtype": "Data",
-   "label": "Customer Name"
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name",
+   "options": "Customer",
+   "reqd": 1
   },
   {
    "fieldname": "server_port",
@@ -128,8 +137,10 @@
   },
   {
    "fieldname": "consultant_name",
-   "fieldtype": "Data",
-   "label": "Consultant Name "
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Consultant Name ",
+   "options": "Consultant Name"
   },
   {
    "fieldname": "consultant_email",
@@ -142,8 +153,9 @@
   },
   {
    "fieldname": "sales_man_name",
-   "fieldtype": "Data",
-   "label": "Sales Man Name"
+   "fieldtype": "Select",
+   "label": "Sales Man Name",
+   "options": "\nali gad\nahmed hussien\nmohamed hesham\nabdelrhman karam\nmahmoud osman\nmohamed wesam"
   },
   {
    "fieldname": "sales_man_email",
@@ -168,11 +180,20 @@
    "label": "Naming Series",
    "options": "SER-.YYYY.-",
    "translatable": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer ",
+   "options": "Customer"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-04 17:15:21.140451",
+ "modified": "2024-02-28 16:43:22.289489",
  "modified_by": "Administrator",
  "module": "Server Management",
  "name": "Server",
@@ -192,5 +213,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "server_url"
 }
